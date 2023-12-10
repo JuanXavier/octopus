@@ -1,0 +1,19 @@
+{
+  "name": "Octopus - Chainopoly",
+  "version": "0.1.0",
+  "author": "Juan Xavier Valverde Malats",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-foundry": "^1.0.1",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomicfoundation/hardhat-verify": "^2.0.1",
+    "hardhat": "^2.18.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@chainlink/contracts-ccip": "^0.7.6",
+    "@openzeppelin/contracts": "^4.8.3",
+    "dotenv": "^16.3.1"
+  }
+}

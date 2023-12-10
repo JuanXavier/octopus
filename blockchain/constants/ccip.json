@@ -1,0 +1,40 @@
+{
+  "ccip": {
+    "chainSelector": {
+      "mumbai": "12532609583862916517",
+      "sepolia": "16015286601757825753"
+    },
+    "router": {
+      "mumbai": "0x70499c328e1e2a3c41108bd3730f6670a44595d1",
+      "sepolia": "0xd0daae2231e9cb96b94c8512223533293c3693bf"
+    },
+    "feeTokens": {
+      "mumbai": {
+        "link": "0x326C977E6efc84E512bB9C30f76E30c160eD06FB",
+        "wmatic": "0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889"
+      },
+      "sepolia": {
+        "link": "0x779877A7B0D9E8603169DdbD7836e478b4624789",
+        "weth": "0x097D90c9d3E0B50Ca60e1ae45F6A81010f9FB534"
+      }
+    },
+    "cross_chain": {
+      "mumbai_sepolia": {
+        "ccip_BnM": "0xf1E3A5842EeEF51F2967b3F05D45DD4f4205FF40",
+        "ccip_LnM": "0xc1c76a8c5bfde1be034bbcd930c668726e7c1987"
+      },
+      "mumbai-fuji": {
+        "ccip_BnM": "0xf1E3A5842EeEF51F2967b3F05D45DD4f4205FF40",
+        "ccip_LnM": "0xc1c76a8c5bfde1be034bbcd930c668726e7c1987"
+      },
+      "mumbai-optimism_goerli": {
+        "ccip_BnM": "0xf1E3A5842EeEF51F2967b3F05D45DD4f4205FF40",
+        "ccip_LnM": "0xc1c76a8c5bfde1be034bbcd930c668726e7c1987"
+      },
+      "mumbai-bnb_testnet": {
+        "ccip_BnM": "0xf1E3A5842EeEF51F2967b3F05D45DD4f4205FF40",
+        "ccip_LnM": "0xc1c76a8c5bfde1be034bbcd930c668726e7c1987"
+      }
+    }
+  }
+}

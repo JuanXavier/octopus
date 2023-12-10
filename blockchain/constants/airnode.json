@@ -1,0 +1,14 @@
+{
+  "airnode": {
+    "testnetAirnode": "0x6238772544f029ecaBfDED4300f13A3c4FE84E1D",
+    "xpub": "xpub6CuDdF9zdWTRuGybJPuZUGnU4suZowMmgu15bjFZT2o6PUtk4Lo78KGJUGBobz3pPKRaN9sLxzj21CMe6StP3zUsd8tWEJPgZBesYBMY7Wo",
+    "endpointIdUint256": "0x94555f83f1addda23fdaa7c74f27ce2b764ed5cc430c66f5ff1bcf39d583da36",
+    "RrpV0": {
+      "mainnet": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "mumbai": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "goerli": "0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd",
+      "sepolia": "0x2ab9f26E18B64848cd349582ca3B55c2d06f507d"
+    },
+    "endpointIdUint256Array": "0x9877ec98695c139310480b4323b9d474d48ec4595560348a2341218670f7fbc2"
+  }
+}
