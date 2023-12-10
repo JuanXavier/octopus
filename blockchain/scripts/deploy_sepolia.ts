@@ -1,7 +1,7 @@
 import { ethers } from "hardhat"
 import * as fs from "fs"
 import { execSync } from "child_process"
-import dotenv from "dotenv"
+import "dotenv/config"
 import "../constants/tokens.json"
 import { chainlinkAggregators } from "../constants/chainlinkAggregators.json"
 import { airnode } from "../constants/airnode.json"

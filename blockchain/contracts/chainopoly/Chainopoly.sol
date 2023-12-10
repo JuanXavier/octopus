@@ -47,6 +47,7 @@ contract Chainopoly is IChainopoly, Authority, RrpRequesterV0 {
 
   function setGameConfig(
     address newBoard,
+    address _converter,
     uint128 createGameInUsd,
     uint128 joinGameInUsd,
     uint8 newMinimumRounds,
@@ -55,6 +56,7 @@ contract Chainopoly is IChainopoly, Authority, RrpRequesterV0 {
     uint16 _minHoursToCancelGame
   ) external {
     _onlyAuthority();
+    converter = _converter;
     costs.createGameInUsd = createGameInUsd;
     costs.joinGameInUsd = joinGameInUsd;
     minPlayers = uint8(_minPlayers);
@@ -103,16 +105,16 @@ contract Chainopoly is IChainopoly, Authority, RrpRequesterV0 {
     }
   }
 
-  function fundSponsorWallet() public payable {
-    if (airnode.sponsorWallet != address(0)) {
-      (bool ok, ) = payable(airnode.sponsorWallet).call{value: msg.value}("");
-      if (ok) emit Events.SponsorWalletFunded(msg.sender, msg.value);
-      else revert Errors.TransferFailed();
-    }
-  }
+  // function fundSponsorWallet() public payable {
+  //   if (airnode.sponsorWallet != address(0)) {
+  //     (bool ok, ) = payable(airnode.sponsorWallet).call{value: msg.value}("");
+  //     if (ok) emit Events.SponsorWalletFunded(msg.sender, msg.value);
+  //     else revert Errors.TransferFailed();
+  //   }
+  // }
 
   receive() external payable {
-    fundSponsorWallet();
+    // fundSponsorWallet();
   }
 
   /* ****************************************************** */
